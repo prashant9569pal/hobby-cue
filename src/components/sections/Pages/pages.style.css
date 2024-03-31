@@ -1,0 +1,40 @@
+section.pages {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.page-card{
+    width: calc(50% - 20px);
+    padding: 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: .3s;
+}
+.page-card p{
+    font-size: 18px;
+}
+.page-card svg{
+    height: 30px;
+    width: 30px;
+}
+.card-btn{
+    border: 1px solid pink;
+}
+
+@media (max-width: 769px){
+    .page-card{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .page-card button{
+        width: 100%;
+    }
+    .desc {
+        text-align: center;
+    }
+}
+/* @media (max-width: 450px){
+    .page-card{
+        width: 100%;
+    }
+} */

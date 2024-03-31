@@ -1,0 +1,69 @@
+section.hero{
+    min-height: calc(100vh - 86px);
+    width: 100%;
+    background-color: #F7F5F9;
+    position: relative;
+}
+.hero-text{
+    width: 60%;
+}
+.hero img{
+    position: absolute;
+    left: 100px;
+    bottom: 0;
+    width: 50%;
+}
+.hero .form {
+    flex: 1;
+    margin-left: 100px;
+    /* background-color: blue; */
+}
+.hero .form small{
+    color: #6D747A;
+}
+.hero .form small span{
+    color: #000;
+    font-weight: 500;
+}
+.hero .form .form-tabs li span{
+    color: #939CA3;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+}
+.hero .form .form-tabs li span.active{
+    color: #8064A2;
+}
+
+@media (max-width: 1000px) {
+    .hero-text{
+        width: 50%;
+    }
+    .hero img{
+        width: 40%;
+    }
+    /* .hero .form{
+        width: 100%;
+        margin-left: 50px;
+    } */
+}
+@media (max-width: 769px) {
+    .hero-text{
+        width: 100%;
+    }
+    .hero img{
+        width: 100%;
+        left: 0;
+        padding: 0 20px;
+    }
+    .hero .form{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 180px;
+    }
+}
+@media (max-width: 450px) {
+    .hero .form{
+        margin-bottom: 120px;
+    }
+}
